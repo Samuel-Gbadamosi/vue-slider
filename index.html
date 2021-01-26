@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <!-- font awesome -->
+
+  <!-- link of css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- /link of css -->
+  <!-- vue link  -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <!-- vue link  -->
+
+</head>
+<body>
+<!-- container section -->
+  <div id="app" class="">
+    <!-- prev function section -->
+    <div class="prev" @click="prevPhoto()">
+       <i class="fas fa-arrow-circle-left"></i>
+    </div>
+    <!-- prev function section -->
+
+<!-- images -->
+    <div class="images">
+      <img :src="immagine[counter]" alt="">
+
+    </div>
+    <!-- images -->
+
+<!-- next function button -->
+    <div class="next" @click="nextPhoto()">
+       <i class="fas fa-arrow-circle-right"></i>
+    </div>
+    <!-- next function button -->
+
+    <div class="nav">
+      <ul>
+        <li> <i class="far fa-circle" v-for="(img , index) in immagine" :class="(index == counter) ? 'red' : 'null' "></i></li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- container section -->
+
+<!-- js link -->
+  <script src="js/script.js" charset="utf-8"></script>
+  <!-- js link -->
+
+</body>
+</html>
