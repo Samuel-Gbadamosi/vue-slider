@@ -26,10 +26,13 @@ methods: {
   }
 }
 
-
-
-
-
+//
+//
+// i need to work on the buttons later, once licked it should display actual picture base on its index
+//
+//
+// achievements would be updated later...
+//
 
 
 
