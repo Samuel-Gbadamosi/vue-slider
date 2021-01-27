@@ -23,6 +23,13 @@ methods: {
     if (this.counter < 0 ){
       this.counter = this.immagine.length -1
     }
+  },
+  smButton (){
+   this.counter++;
+   console.log(this.counter);
+   if(this.counter == (this.immagine.length)){
+     this.counter = 0
+   }
   }
 }
 

@@ -39,11 +39,14 @@
     </div>
     <!-- next function button -->
 
+ <!-- nav button function button to nav i  -->
     <div class="nav">
       <ul>
-        <li> <i class="far fa-circle" v-for="(img , index) in immagine" :class="(index == counter) ? 'red' : 'null' "></i></li>
+        <li> <i class="far fa-circle" @click="smButton() "v-for="(img , index) in immagine" :class="(index == counter) ? 'red' : 'null' "></i></li>
       </ul>
     </div>
+    <!-- nav button function button to nav i  -->
+
 
   </div>
   <!-- container section -->
